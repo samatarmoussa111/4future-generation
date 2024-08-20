@@ -30,10 +30,10 @@ const Typography = ({
 
   switch (variant) {
     case "h1":
-      variantStyles = ` scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-6xl`;
+      variantStyles = ` scroll-m-20 text-4xl font-extrabold tracking-tight  lg:text-6xl`;
       break;
     case "p": // Default
-      variantStyles = `leading-7 [&:not(:first-child)]:mt-6`;
+      variantStyles = `leading-7  [&:not(:first-child)]:mt-6`;
       break;
     case "h2":
       variantStyles = `scroll-m-20 text-3xl font-semibold tracking-tight first:mt-0`;
