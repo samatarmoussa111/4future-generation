@@ -6,6 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "types:generate": "openapi-typescript C:Users/donal/Desktop/Strapi/backend/src/api/post/content-types/post/schema.json -o ./app/strapi.d.ts && npm run tsc --noEmit",
     "lint": "next lint"
   },
   "dependencies": {
@@ -15,6 +16,7 @@
     "@radix-ui/react-slot": "^1.1.0",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
+    "framer-motion": "^11.3.28",
     "lucide-react": "^0.428.0",
     "next": "14.2.5",
     "next-themes": "^0.3.0",
