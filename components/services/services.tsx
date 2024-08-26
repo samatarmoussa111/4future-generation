@@ -4,7 +4,7 @@ import Wrapper from "../wrapper/wrapper";
 
 const Services = () => {
   return (
-    <div className="bg-muted py-5 sm:py-10 ">
+    <div className="bg-muted/35 py-5 sm:py-10 ">
       <Wrapper>
         <div className="space-y-4 flex flex-col sm:items-center items-start justify-center sm:text-center">
           <Typography variant="h2">The Initiative We&apos;ve Taken </Typography>
