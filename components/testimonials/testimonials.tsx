@@ -34,7 +34,7 @@ export const Testimonial17 = (props: Testimonial17Props) => {
       <div className="container">
         <div className="space-y-4 flex flex-col sm:items-center items-start justify-center sm:text-center">
           <Typography variant="h2"> {heading} </Typography>
-          <Typography className=" max-w-3xl text-muted-foreground md:text-xl">
+          <Typography className=" max-w-3xl text-muted-foreground">
             {description}
           </Typography>
         </div>
@@ -55,19 +55,19 @@ export const Testimonial17 = (props: Testimonial17Props) => {
                       />
                     ))}
                 </div>
-                <blockquote className="md:text-md">
+                <blockquote className="md:text-md text-muted-foreground">
                   {testimonial.quote}
                 </blockquote>
               </div>
-              <div className="flex w-full flex-col items-start text-left md:w-fit md:flex-row md:items-center">
+              <div className="flex w-full  items-center text-left md:w-fit md:flex-row md:items-center">
                 <img
                   src={testimonial.avatar.src}
                   alt={testimonial.avatar.alt}
                   className="mb-4 mr-0 size-12 min-h-12 min-w-12 rounded-full object-cover md:mb-0 md:mr-4"
                 />
                 <div>
-                  <p className="font-semibold">{testimonial.name}</p>
-                  <p>
+                  <p>{testimonial.name}</p>
+                  <p className="text-muted-foreground">
                     {testimonial.position}, {testimonial.companyName}
                   </p>
                 </div>

@@ -21,7 +21,7 @@ const Card = ({ title, description, image }: CardProps) => {
       <div className="space-y-2 my-2 text-center p-2">
         <Typography variant="h3">{title}</Typography>
 
-        <Typography>{description}</Typography>
+        <Typography className="text-muted-foreground">{description}</Typography>
       </div>
     </div>
   );

@@ -21,7 +21,7 @@ const Hero = () => {
             <Typography variant="h2">
               Improving Lives Through Early Childhood Development
             </Typography>
-            <Typography className="max-w-[600px] text-muted-foreground md:text-xl">
+            <Typography className="max-w-[600px] text-muted-foreground ">
               The 4 Future Generations; Early Childhood Development Initiative
               is dedicated to improving the overall well-being of the Immigrants
               in the Lewiston/Auburn area. Through a community-led and
@@ -30,7 +30,22 @@ const Hero = () => {
               Childhood Development.
             </Typography>
           </div>
-          <Button>Get started</Button>
+          <div className="flex items-start justify-between ">
+            <div className="flex flex-col space-y-2">
+              <Typography variant="h4"> Our mission</Typography>
+              <Typography className="text-muted-foreground max-w-[500px]">
+                To create a thriving community by focusing on Early Childhood
+                Development and supporting immigrant families.
+              </Typography>
+            </div>
+            <div className="flex flex-col space-y-2">
+              <Typography variant="h4"> Our vision</Typography>
+              <Typography className="text-muted-foreground max-w-[500px]">
+                A future where all immigrant children have equal opportunities
+                to succeed and thrive.
+              </Typography>
+            </div>
+          </div>
         </div>
       </div>
     </Wrapper>

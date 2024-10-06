@@ -83,11 +83,13 @@ export const Footer11 = (props: Footer11Props) => {
             <div className="mb-6 md:mb-8">
               <div>
                 <p className="mb-1 text-sm font-semibold">{address.label}</p>
-                <p className="mb-5 text-sm md:mb-6">{address.value}</p>
+                <p className="mb-5 text-sm md:mb-6 text-muted-foreground">
+                  {address.value}
+                </p>
               </div>
               <div>
                 <p className="mb-1 text-sm font-semibold">{contact.label}</p>
-                <p className="flex flex-col text-sm underline decoration-primary underline-offset-1 md:mb-6">
+                <p className="flex flex-col text-sm underline decoration-primary underline-offset-1 md:mb-6 text-muted-foreground">
                   <a href={`tel:${contact.phone}`}>{contact.phone}</a>
                   <a href={`mailto:${contact.email}`}>{contact.email}</a>
                 </p>
@@ -101,19 +103,18 @@ export const Footer11 = (props: Footer11Props) => {
               ))}
             </div>
           </div>
-          <div className="grid grid-cols-1 items-start gap-x-6 gap-y-10 sm:grid-cols-2 md:gap-x-8 md:gap-y-4">
-            {columnLinks.map((column, index) => (
-              <ul key={index}>
-                {column.links.map((link, linkIndex) => (
-                  <li key={linkIndex} className="py-2 text-sm font-semibold">
-                    <a href={link.url}>{link.title}</a>
-                  </li>
-                ))}
-              </ul>
-            ))}
+          <div className="flex items-center justify-center">
+            <ul className="space-y-2">
+              <li className="mb-4 text-sm font-semibold">Hours of Operation</li>
+              <div className="space-y-2 text-muted-foreground text-sm">
+                <li>Monday - Friday: 8:00 AM - 6:00 PM</li>
+                <li>Saturday: 8:00 AM - 4:00 PM</li>
+                <li>Sunday: Closed</li>
+              </div>
+            </ul>
           </div>
         </div>
-        <div className="flex flex-col-reverse items-start justify-between pb-4 pt-6 text-sm md:flex-row md:items-center md:pb-0 md:pt-8">
+        <div className="flex flex-col-reverse items-start justify-between pb-4 pt-6 text-sm md:flex-row md:items-center md:pb-0 md:pt-8 text-muted-foreground">
           <p className="mt-8 md:mt-0">{footerText}</p>
           <ul className="grid grid-flow-row grid-cols-[max-content] justify-center gap-x-0 gap-y-4 text-sm md:grid-flow-col md:gap-x-6 md:gap-y-0">
             {footerLinks.map((link, index) => (

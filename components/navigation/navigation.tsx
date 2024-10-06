@@ -21,16 +21,16 @@ const Navigation = () => {
               <li>
                 <Link
                   className="text-muted-foreground transition text-[16px] hover:text-primary"
-                  href="#"
+                  href="/programs"
                 >
                   {" "}
-                  Services{" "}
+                  Programs{" "}
                 </Link>
               </li>
               <li>
                 <Link
                   className="text-muted-foreground transition text-[16px] hover:text-primary"
-                  href="#"
+                  href="/about-us"
                 >
                   {" "}
                   About US{" "}

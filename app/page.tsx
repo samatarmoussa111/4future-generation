@@ -1,4 +1,5 @@
 import Banner from "@/components/banner/banner";
+import { Faq4 } from "@/components/faqs/faqs";
 import { Footer11 } from "@/components/footer/footer";
 import Hero from "@/components/hero/hero";
 import Navigation from "@/components/navigation/navigation";
@@ -17,6 +18,9 @@ export default async function Home() {
       <Services />
       <Wrapper>
         <Testimonial17 />
+      </Wrapper>
+      <Wrapper>
+        <Faq4 />
       </Wrapper>
       <Footer11 />
     </>

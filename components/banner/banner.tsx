@@ -11,7 +11,7 @@ const Banner = () => {
           <Typography variant="h1" className="text-white">
             Empowering Immigrant Families Through Early Childhood Development
           </Typography>
-          <Typography className="mt-2 mb-3 max-w-2xl text-white font-medium">
+          <Typography className="mt-2 mb-3 max-w-2xl text-white font-medium ">
             Welcome to The 4 Future Generations initiative. We are dedicated to
             improving the well-being of Immigrants in the Lewiston/Auburn area
             by focusing on Early Childhood Development. Join us in creating a

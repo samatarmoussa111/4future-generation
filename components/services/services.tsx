@@ -8,7 +8,7 @@ const Services = () => {
       <Wrapper>
         <div className="space-y-4 flex flex-col sm:items-center items-start justify-center sm:text-center">
           <Typography variant="h2">The Initiative We&apos;ve Taken </Typography>
-          <Typography className=" max-w-3xl text-muted-foreground md:text-xl">
+          <Typography className=" max-w-3xl text-muted-foreground ">
             Join The 4 Future Generations in our mission to transform
             communities through early childhood development. We prioritize
             community involvement and quality education to create a brighter
