@@ -41,7 +41,7 @@ export const Faq4 = (props: Faq4Props) => {
   } as Props;
   return (
     <section id="relume" className=" py-5 sm:py-20">
-      <div className="container max-w-[70%] mx-auto">
+      <div className="container max-w-[1200px] sm:max-w-[70%] mx-auto">
         <div className="space-y-4 flex flex-col sm:items-center items-start justify-center sm:text-center">
           <Typography variant="h2"> {heading} </Typography>
           <Typography className=" max-w-3xl text-muted-foreground">

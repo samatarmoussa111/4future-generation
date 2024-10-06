@@ -59,11 +59,11 @@ export const Testimonial17 = (props: Testimonial17Props) => {
                   {testimonial.quote}
                 </blockquote>
               </div>
-              <div className="flex w-full  items-center text-left md:w-fit md:flex-row md:items-center">
+              <div className="flex w-full  items-center justify-center text-left md:w-fit md:flex-row md:items-center">
                 <img
                   src={testimonial.avatar.src}
                   alt={testimonial.avatar.alt}
-                  className="mb-4 mr-0 size-12 min-h-12 min-w-12 rounded-full object-cover md:mb-0 md:mr-4"
+                  className=" mr-2 size-12 min-h-12 min-w-12 rounded-full object-cover sm:mb-0 sm:mr-4"
                 />
                 <div>
                   <p>{testimonial.name}</p>

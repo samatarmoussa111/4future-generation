@@ -30,7 +30,7 @@ const Hero = () => {
               Childhood Development.
             </Typography>
           </div>
-          <div className="flex items-start justify-between ">
+          <div className="flex items-start justify-between flex-col sm:flex-row space-y-4 sm:space-y-0 ">
             <div className="flex flex-col space-y-2">
               <Typography variant="h4"> Our mission</Typography>
               <Typography className="text-muted-foreground max-w-[500px]">
