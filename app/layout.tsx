@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
-import { Space_Grotesk, Roboto } from "next/font/google";
+import { Space_Grotesk, Roboto, Lexend } from "next/font/google";
 import "./globals.css";
+import Wrapper from "@/components/wrapper/wrapper";
+import Navigation from "@/components/navigation/navigation";
+import { Footer11 } from "@/components/footer/footer";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -9,6 +12,10 @@ export const metadata: Metadata = {
 
 const spaceGrotesk = Space_Grotesk({
   weight: ["400", "700"],
+  subsets: ["latin"],
+});
+
+const lexend = Lexend({
   subsets: ["latin"],
 });
 
@@ -24,7 +31,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={roboto.className}>{children}</body>
+      <body className={lexend.className}>
+        <Wrapper>
+          <Navigation />
+        </Wrapper>
+        {children}
+        <Footer11 />
+      </body>
     </html>
   );
 }

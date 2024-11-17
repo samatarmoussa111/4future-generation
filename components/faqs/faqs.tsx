@@ -66,7 +66,7 @@ export const Faq4 = (props: Faq4Props) => {
               >
                 {question.title}
               </AccordionTrigger>
-              <AccordionContent className="md:pb-6 text-muted-foreground font-thin text-sm">
+              <AccordionContent className="md:pb-6 text-muted-foreground text-sm">
                 {question.answer}
               </AccordionContent>
             </AccordionItem>

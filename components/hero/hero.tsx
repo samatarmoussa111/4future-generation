@@ -1,6 +1,5 @@
 import Wrapper from "../wrapper/wrapper";
 import Typography from "../ui/typography";
-import { Button } from "../ui/button";
 
 const Hero = () => {
   return (

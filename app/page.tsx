@@ -10,9 +10,6 @@ import Wrapper from "@/components/wrapper/wrapper";
 export default async function Home() {
   return (
     <>
-      <Wrapper>
-        <Navigation />
-      </Wrapper>
       <Banner />
       <Hero />
       <Services />
@@ -22,7 +19,6 @@ export default async function Home() {
       <Wrapper>
         <Faq4 />
       </Wrapper>
-      <Footer11 />
     </>
   );
 }
