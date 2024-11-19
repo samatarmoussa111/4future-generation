@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Card, { CardProps } from "../cards/cards";
 import Typography from "../ui/typography";
 import Wrapper from "../wrapper/wrapper";
 
@@ -122,5 +122,62 @@ const Layout6 = () => {
     </Wrapper>
   );
 };
+
+export const Layout239 = ({
+  heading,
+  description,
+}: {
+  heading: string;
+  description: string;
+}) => {
+  return (
+    <div className="py-5 sm:py-20 ">
+      <Wrapper>
+        <div className="space-y-4 flex flex-col sm:items-center items-start justify-center sm:text-center">
+          <Typography variant="h2">{heading} </Typography>
+          <Typography className=" max-w-3xl text-muted-foreground ">
+            {description}
+          </Typography>
+        </div>
+        <div className="flex items-center justify-center">
+          <div className="grid grid-cols-1 gap-2 sm:grid-cols-3 sm:gap-12 mt-10 sm:mt-20 space-y-2 sm:space-y-0  ">
+            {TEAMS.map((team) => (
+              <Card
+                key={team.title}
+                title={team.title}
+                description={team.description}
+                image={team.image}
+              />
+            ))}
+          </div>
+        </div>
+      </Wrapper>
+    </div>
+  );
+};
+
+export const TEAMS: CardProps[] = [
+  {
+    title: "John Doe - Executive Director",
+    description:
+      "John Doe brings years of experience in nonprofit management and a deep understanding of the needs of immigrant communities.",
+    image:
+      "https://images.unsplash.com/photo-1502086223501-7ea6ecd79368?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8SGVhbHRoJTIwJTI2JTIwV2VsbG5lc3MlMjAlMjBjaGlsZHJlbnxlbnwwfHwwfHx8Mg%3D%3D",
+  },
+  {
+    title: "Samatar Barkadleh - Program Manager",
+    description:
+      "Samatar Barkadleh is passionate about early childhood development and has successfully implemented various programs in the past.",
+    image: "/photo_identite.jpeg",
+  },
+
+  {
+    title: "Mark Johnson - Finance Director",
+    description:
+      "Mark Johnson ensures the financial sustainability of our organization, allowing us to continue our important work.",
+    image:
+      "https://images.unsplash.com/photo-1517164850305-99a3e65bb47e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fFlvdXRoJTIwTGVhZGVyc2hpcHxlbnwwfHwwfHx8Mg%3D%3D",
+  },
+];
 
 export default Layout6;

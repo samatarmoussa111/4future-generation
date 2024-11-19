@@ -8,14 +8,14 @@ export interface CardProps {
 
 const Card = ({ title, description, image }: CardProps) => {
   return (
-    <div className="rounded-xl bg-white max-w-[400px] ">
+    <div className="rounded-xl bg-white border border-gray-200 max-w-[400px] ">
       <div>
         <img
           src={image}
           alt={title}
           width={400}
           height={300}
-          className="mx-auto rounded-t-xl h-[250px] aspect-square overflow-hidden object-cover object-center"
+          className="mx-auto rounded-t-xl aspect-square overflow-hidden object-cover object-center"
         />
       </div>
       <div className="space-y-2 my-2 text-center p-2">
